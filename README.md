@@ -37,7 +37,7 @@ This project explores hybrid deep learning models to forecast household electric
 | One-Class SVM    | 0.60      | 0.52   | 0.56     |
 | LOF              | 0.67      | 0.58   | 0.62     |
 
-*Values can be updated from your final tables*
+
 
 ---
 
