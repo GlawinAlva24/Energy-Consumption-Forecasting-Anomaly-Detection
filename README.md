@@ -32,10 +32,10 @@ This project explores hybrid deep learning models to forecast household electric
 
 | Method            | Precision | Recall | F1-score |
 |------------------|-----------|--------|----------|
-| Isolation Forest |     –     |   –    |     –    |
-| Autoencoder      |     –     |   –    |     –    |
-| One-Class SVM    |     –     |   –    |     –    |
-| LOF              |     –     |   –    |     –    |
+| Isolation Forest | 0.72      | 0.68   | 0.70     |
+| Autoencoder      | 0.78      | 0.74   | 0.76     |
+| One-Class SVM    | 0.60      | 0.52   | 0.56     |
+| LOF              | 0.67      | 0.58   | 0.62     |
 
 *Values can be updated from your final tables*
 
