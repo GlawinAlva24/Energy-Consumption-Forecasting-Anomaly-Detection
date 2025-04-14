@@ -3,22 +3,59 @@
 **MSc Dissertation – Artificial Intelligence with Business Strategy**  
 *By Glawin John Alva – Supervised by Dr. Farzaneh Farhadi*
 
-This project explores hybrid deep learning models to forecast household electricity consumption and detect anomalies that may signify device faults, inefficiencies, or abnormal usage behavior.
+This project applies deep learning and hybrid models to forecast household energy consumption and detect anomalies using both statistical and AI-based techniques.
 
 ---
 
-## 🚀 Project Highlights
+## 🚀 Highlights
 
-- 🔀 **Hybrid Forecasting**: LSTM + Stationary Wavelet Transform (SWT) improves accuracy by filtering noise
-- 🔍 **Anomaly Detection**: Isolation Forest, Autoencoders, One-Class SVM, and Local Outlier Factor
-- 📊 **Datasets Used**:
-  - UCI Household Electric Power Consumption (Forecasting)
-  - LEAD1.0 (Labelled Anomaly Detection – Commercial Buildings)
-- 📈 **Key Metrics**: RMSE, MAE, F1-score, Precision, Recall
+- 🔀 **Hybrid Forecasting**: LSTM + Stationary Wavelet Transform (SWT) for denoised, accurate predictions
+- 🔍 **Unsupervised Anomaly Detection**: Autoencoder, Isolation Forest, LOF, and One-Class SVM
+- ⚖️ **Imbalanced Data Handling**: SMOTE applied to boost anomaly training samples
+- 📦 **Datasets Used**:
+  - UCI Household Power Consumption Dataset
+  - LEAD1.0 Dataset (Labelled commercial anomalies)
 
 ---
 
-## 📊 Forecasting Results
+## 🗃️ Folder Structure
+Energy-Consumption-Forecasting-Anomaly-Detection/
+│
+├── database/
+│   ├── UCI_dataset.zip
+│   ├── LEAD1_dataset.zip
+│   └── household_power_consumption.csv
+│
+├── data/
+│   └── README.md
+│
+├── notebooks/
+│   ├── forecasting/
+│   │   ├── CNN_AND_LSTM_MODEL.ipynb
+│   │   └── Hybrid_UCI_dataset.ipynb
+│   ├── anomaly_detection/
+│   │   └── final1_Lead-with_SMOTE.ipynb
+│
+├── models/
+│   └── best_model.keras
+│
+├── results/
+│   ├── anomaly_detection_results_summary.xlsx
+│   └── output_graphs/
+│       ├── swt_decomposition.png
+│       ├── residuals_plot.png
+│       └── lof_anomalies.png
+│
+├── requirements.txt
+├── .gitignore
+├── README.md
+└── LICENSE
+
+---
+
+## 📈 Results Summary
+
+### Forecasting (RMSE / MAE)
 
 | Model               | Dataset      | RMSE   | MAE    |
 |--------------------|--------------|--------|--------|
@@ -26,9 +63,7 @@ This project explores hybrid deep learning models to forecast household electric
 | SWT-LSTM (Hybrid)  | LEAD1.0      | 0.0386 | 0.0284 |
 | CNN-LSTM           | UCI          | 0.0584 | 0.0418 |
 
----
-
-## 🔍 Anomaly Detection Results (LEAD1.0)
+### Anomaly Detection (on LEAD1.0)
 
 | Method            | Precision | Recall | F1-score |
 |------------------|-----------|--------|----------|
@@ -37,38 +72,76 @@ This project explores hybrid deep learning models to forecast household electric
 | One-Class SVM    | 0.60      | 0.52   | 0.56     |
 | LOF              | 0.67      | 0.58   | 0.62     |
 
+---
 
+## 💾 Usage
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/GlawinAlva24/Energy-Consumption-Forecasting-Anomaly-Detection.git
+cd Energy-Consumption-Forecasting-Anomaly-Detection
 
 ---
 
-## 📚 Methodology
 
-**Hybrid Forecasting Pipeline**:
-1. Preprocess time-series data (resample, normalize, lag features)
-2. Apply Stationary Wavelet Transform (SWT)
-3. Train LSTM on approximation coefficients
-4. Predict future hourly consumption
+### 2. Unzip Datasets
 
-**Anomaly Detection Pipeline**:
-- Use residuals (actual - predicted) for unsupervised detection
-- Apply:
-  - Isolation Forest (spikes)
-  - Autoencoders (reconstruction error)
-  - One-Class SVM (subtle deviations)
-  - LOF (local density outliers)
+Use any archive tool like **7-Zip** or **WinRAR** to extract:
+
+- `UCI_dataset.zip`
+- `LEAD1_dataset.zip`
+
+Place the contents in the appropriate `data/` subfolders.
 
 ---
 
-## 🧠 Technologies Used
+### 3. Install Dependencies
 
-- Python, Jupyter Notebooks
-- Pandas, NumPy, Matplotlib, Seaborn
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4. Run Notebooks
+
+You can start Jupyter Notebook and run any of the following:
+
+- 📊 Forecasting: `notebooks/forecasting/Hybrid_UCI_dataset.ipynb`
+- 🤖 Anomaly Detection: `notebooks/anomaly_detection/final1_Lead-with_SMOTE.ipynb`
+- 📈 CNN vs LSTM: `notebooks/forecasting/CNN_AND_LSTM_MODEL.ipynb`
+
+---
+
+## 🛠 Technologies
+
+- Python (Jupyter Notebooks)
 - TensorFlow / Keras
-- Scikit-learn, PyWavelets
-- SMOTE (imbalanced anomaly data)
-- Google Colab, Visual Studio Code
+- PyWavelets
+- Scikit-learn, Imbalanced-learn (SMOTE)
+- Matplotlib, Seaborn
+- NumPy, Pandas
 
 ---
 
-## 🛠️ Project Structure
+## 🧠 Future Work
 
+- Real-time streaming integration (Kafka or MQTT)
+- Streamlit dashboard for anomaly feedback
+- Expand to multi-household or grid-level predictions
+- Live IoT integration and alerts
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙌 Acknowledgements
+
+- Dr. Farzaneh Farhadi (Supervisor)
+- University of [Your University Name]
+- Dataset contributors: UCI Machine Learning Repository & LEAD1.0
