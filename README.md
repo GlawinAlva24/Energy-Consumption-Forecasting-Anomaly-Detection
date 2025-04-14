@@ -26,9 +26,6 @@ Energy-Consumption-Forecasting-Anomaly-Detection/
 │   ├── LEAD1_dataset.zip     
 │   └── household_power_consumption.csv    
 │  
-├── data/  
-│   └── README.md  
-│  
 ├── notebooks/    
 │   ├── forecasting/  
 │   │   ├── CNN_AND_LSTM_MODEL.ipynb    
