@@ -19,22 +19,22 @@ This project applies deep learning and hybrid models to forecast household energ
 ---
 
 ## 🗃️ Folder Structure
-Energy-Consumption-Forecasting-Anomaly-Detection/
+Energy-Consumption-Forecasting-Anomaly-Detection/ 
+│ 
+├── database/ 
+│   ├── UCI_dataset.zip 
+│   ├── LEAD1_dataset.zip   
+│   └── household_power_consumption.csv  
 │
-├── database/
-│   ├── UCI_dataset.zip
-│   ├── LEAD1_dataset.zip
-│   └── household_power_consumption.csv
+├── data/  
+│   └── README.md  
 │
-├── data/
-│   └── README.md
-│
-├── notebooks/
-│   ├── forecasting/
-│   │   ├── CNN_AND_LSTM_MODEL.ipynb
-│   │   └── Hybrid_UCI_dataset.ipynb
-│   ├── anomaly_detection/
-│   │   └── final1_Lead-with_SMOTE.ipynb
+├── notebooks/  
+│   ├── forecasting/  
+│   │   ├── CNN_AND_LSTM_MODEL.ipynb  
+│   │   └── Hybrid_UCI_dataset.ipynb  
+│   ├── anomaly_detection/  
+│   │   └── final1_Lead-with_SMOTE.ipynb  
 │
 ├── models/
 │   └── best_model.keras
@@ -143,5 +143,5 @@ This project is licensed under the MIT License.
 ## 🙌 Acknowledgements
 
 - Dr. Farzaneh Farhadi (Supervisor)
-- University of [Your University Name]
+- University of Aston University
 - Dataset contributors: UCI Machine Learning Repository & LEAD1.0
