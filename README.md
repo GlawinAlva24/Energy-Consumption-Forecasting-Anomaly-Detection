@@ -41,15 +41,14 @@ Energy-Consumption-Forecasting-Anomaly-Detection/
 │  
 ├── results/  
 │   ├── anomaly_detection_results_summary.xlsx  
-│   └── output_graphs/  
-│       ├── swt_decomposition.png  
-│       ├── residuals_plot.png  
-│       └── lof_anomalies.png  
+│   └── CNN&lstm_comparison  
+│   └── Prediction&Anomalydetection_LEAD_dataset    
+│   └── Prediction&Anomalydetection_LEAD_dataset    
+│        
 │  
 ├── requirements.txt  
 ├── .gitignore  
-├── README.md  
-└── LICENSE  
+└── README.md    
   
 ---
 

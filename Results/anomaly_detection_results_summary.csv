@@ -1,0 +1,5 @@
+Model,Precision,Recall,F1-Score,Key Findings
+Isolation Forest,0.041,0.0036,0.0065,"Low recall, decent precision"
+One-Class SVM,0.038,0.0168,0.023,"Balanced performance, lower false positives"
+LOF,0.0188,0.0016,0.003,"Lowest recall, limited use"
+Autoencoder,0.0234,0.836,0.0456,"Best recall, high false positives"
