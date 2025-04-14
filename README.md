@@ -19,38 +19,38 @@ This project applies deep learning and hybrid models to forecast household energ
 ---
 
 ## 🗃️ Folder Structure
-Energy-Consumption-Forecasting-Anomaly-Detection/ 
-│ 
-├── database/ 
-│   ├── UCI_dataset.zip 
-│   ├── LEAD1_dataset.zip   
-│   └── household_power_consumption.csv  
-│
+Energy-Consumption-Forecasting-Anomaly-Detection/  
+│  
+├── database/   
+│   ├── UCI_dataset.zip   
+│   ├── LEAD1_dataset.zip     
+│   └── household_power_consumption.csv    
+│  
 ├── data/  
 │   └── README.md  
-│
-├── notebooks/  
+│  
+├── notebooks/    
 │   ├── forecasting/  
-│   │   ├── CNN_AND_LSTM_MODEL.ipynb  
-│   │   └── Hybrid_UCI_dataset.ipynb  
-│   ├── anomaly_detection/  
-│   │   └── final1_Lead-with_SMOTE.ipynb  
-│
-├── models/
-│   └── best_model.keras
-│
-├── results/
-│   ├── anomaly_detection_results_summary.xlsx
-│   └── output_graphs/
-│       ├── swt_decomposition.png
-│       ├── residuals_plot.png
-│       └── lof_anomalies.png
-│
-├── requirements.txt
-├── .gitignore
-├── README.md
-└── LICENSE
-
+│   │   ├── CNN_AND_LSTM_MODEL.ipynb    
+│   │   └── Hybrid_UCI_dataset.ipynb    
+│   ├── anomaly_detection/    
+│   │   └── final1_Lead-with_SMOTE.ipynb    
+│  
+├── models/  
+│   └── best_model.keras  
+│  
+├── results/  
+│   ├── anomaly_detection_results_summary.xlsx  
+│   └── output_graphs/  
+│       ├── swt_decomposition.png  
+│       ├── residuals_plot.png  
+│       └── lof_anomalies.png  
+│  
+├── requirements.txt  
+├── .gitignore  
+├── README.md  
+└── LICENSE  
+  
 ---
 
 ## 📈 Results Summary
