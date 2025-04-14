@@ -48,8 +48,7 @@ Energy-Consumption-Forecasting-Anomaly-Detection/
 │  
 ├── requirements.txt  
 ├── .gitignore  
-├── README.md  
-└── LICENSE  
+└── README.md    
   
 ---
 
